@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit Search Criteria Formatter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Limit Search Criteria Code Generator</h1>
+    </div>
+    <div class="container">
+        
+        <div class="flex-container input">
+            <label>Select a definer:</label>
+            <select id="definer" name="definer" onchange="getDefiner(this.value)">
+                <option selected>Select definer</option>
+                <option value="state">State</option>
+                <option value="county">County</option>
+                <option value="city">City</option>
+                <option value="zipcode">Zip code</option>
+            </select>
+            <br>
+<!-- Field to input specific areas. Hidden until definer selected -->
+            <div class=" flex-container show">
+                <label>Enter areas separated by a comma:</label>
+                <input class="areas" onchange="getAreas(this.value)" placeholder="Enter areas separated by a comma"></input>
+                <button class="format-btn">Generate Code</button>
+            </div>
+        </div>
+<!-- section showing result code -->
+        <div class="flex-container result">
+            <textarea readonly class="code"></textarea>
+            <div class="buttons">
+                <button class="copy" onclick="copyCode()">Copy</button>
+                <button class="reset-btn" onclick="resetForm()">Get New Code</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="formatter.js"></script>
+</body>
+</html>

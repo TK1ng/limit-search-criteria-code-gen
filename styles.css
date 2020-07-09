@@ -1,0 +1,149 @@
+body{
+    background: rgb(54,95,138);
+    background: linear-gradient(187deg, rgba(54,95,138,1) 23%, rgba(39,69,101,1) 77%, rgba(30,46,62,1) 98%);
+    height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin:0;
+    padding:0;
+  }
+
+.header {
+    margin: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+
+.container {
+    padding:40px;
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 5px 10px 15px #1e2025;
+}
+  
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.flex-container > label {
+    margin: 20px 0 10px 0;
+    
+}
+
+.flex-container > input {
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 16px;
+}
+
+.flex-container > select {
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #444;
+    width: 30%;
+    font-size: 16px;
+}
+
+.areas {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 16px;
+    margin: 20px 0;
+    display: none;
+    transition: all 0.4s;
+}
+
+
+
+.format-btn {
+    width: 40%;
+    margin: 40px auto;
+    background-color: #FE6A23;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 0.857rem 1.875rem;
+    border: none;
+    box-shadow: 5px 10px 16px #f89364c7;
+    color: white;
+    font-size: 20px;
+    transition: all 0.4s;
+    outline: none;
+}
+
+.reset-btn {
+    width: 40%;
+    margin: 40px auto;
+    background-color: rgb(54,95,138);
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 0.857rem 1.875rem;
+    border: none;
+    box-shadow: 5px 10px 16px rgba(113, 150, 189, 0.753);
+    color: white;
+    font-size: 20px;
+    transition: all 0.4s;
+    outline: none;
+}
+
+.reset-btn:hover {
+    background-color: rgb(19, 35, 51);
+}
+
+.format-btn:hover {
+    background-color: #773010;
+}
+
+.result {
+    display: none;
+}
+
+.code {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 16px;
+    margin: 20px 0;
+    transition: all 0.4s;
+}
+
+.show {
+    display: none;
+    width: 100%;
+}
+
+.copy {
+    width: 40%;
+    margin: auto;
+    background-color: #FE6A23;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 0.857rem 1.875rem;
+    border: none;
+    box-shadow: 5px 10px 16px #f89364c7;
+    color: white;
+    font-size: 20px;
+    transition: all 0.4s;
+    outline: none;
+}
+
+.copy:hover {
+    background-color: #773010;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

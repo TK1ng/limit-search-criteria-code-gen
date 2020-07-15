@@ -16,7 +16,11 @@ function getDefiner(val){
 }
 
 function getAreas(val) {
-    areas = val.split(",");
+    areas = val.replace(/\s/g, "").split(",");
+    for(area of areas)
+        if(area === '')
+            areas.splice(areas.indexOf(area), 1);
+            return areas;
 }
 
 class CriteriaFormatter {

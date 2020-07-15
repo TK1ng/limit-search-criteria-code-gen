@@ -16,7 +16,7 @@ function getDefiner(val){
 }
 
 function getAreas(val) {
-    areas = val.replace(/\s/g, "").split(",");
+    areas = val.replace(/\s/g, "").split(",").sort();
     for(area of areas)
         if(area === '')
             areas.splice(areas.indexOf(area), 1);

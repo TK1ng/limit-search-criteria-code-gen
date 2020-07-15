@@ -35,6 +35,10 @@ class CriteriaFormatter {
 }
 
 document.querySelector('.format-btn').addEventListener("click", generateCode);
+document.addEventListener('keyup',function(event) {
+    if(event.key === 'Enter')
+        document.querySelector('.format-btn').click();
+})
 
 function generateCode() {
     if (definer === undefined)
